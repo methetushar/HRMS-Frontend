@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from colorlib.com/polygon/gentelella/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 05:48:53 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/images/icon.png" type="image/ico"/>
+    <title>Human Resources | Management System </title>
+
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link href="../assets/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/Employee__Profile.css">
+</head>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <!--                <div class="navbar nav_title" style="border: 0;">-->
+                <!--                    <a href="index.html" class="site_title">-->
+                <!--                        <img src="assets/images/icon.png" height="45px" alt="">-->
+                <!--                        <span>HRMS</span>-->
+                <!--                    </a>-->
+                <!--                </div>-->
+                <div class="clearfix"></div>
+
+                <div class="profile clearfix">
+                    <div class="profile_pic">
+                        <img src="../assets/images/img.jpg" alt="..." class="img-circle profile_img">
+                    </div>
+                    <div class="profile_info">
+                        <span>Welcome</span>
+                        <h2>John Doe</h2>
+                    </div>
+                </div>
+
+                <br/>
+
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>General</h3>
+                        <ul class="nav side-menu">
+                            <li>
+                                <a href="../index.html"><i class="fa fa-home"></i> Dashboard </a>
+                            </li>
+                            <li><a><i class="fa fa-edit"></i> Informations </a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../Profile.html">Profile</a></li>
+                                    <li><a href="Leaves.html">Leaves</a></li>
+                                    <li><a href="Attendance.html">Attendance</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="Settings">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Lock">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="top_nav mb-4 fixed-top">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                    <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav ">
+                    <ul class=" navbar-right">
+                        <li class="nav-item dropdown open" style="padding-left: 15px;">
+                            <a href="javascript:" class="user-profile dropdown-toggle" aria-haspopup="true"
+                               id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/images/img.jpg" alt="">John Doe
+                            </a>
+                            <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <span class="badge bg-red pull-right">50%</span>
+                                    <span>Settings</span>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">Help</a>
+                                <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log
+                                    Out</a>
+                            </div>
+                        </li>
+                        <li role="presentation" class="nav-item dropdown open">
+                            <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
+                               data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge bg-green">6</span>
+                            </a>
+                            <ul class="dropdown-menu list-unstyled msg_list" role="menu"
+                                aria-labelledby="navbarDropdown1">
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                            <span>John Smith</span>
+                                            <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                        <span>John Smith</span>
+                                            <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="text-center">
+                                        <a class="dropdown-item">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="right_col" role="main">
+            <!-- Page Content -->
+            <div class="content container-fluid">
+
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">Attendance</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Attendance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card punch-status">
+                            <div class="card-body">
+                                <h5 class="card-title">Timesheet <small class="text-muted">11 Mar 2019</small></h5>
+                                <div class="punch-det">
+                                    <h6>Punch In at</h6>
+                                    <p>Wed, 11th Mar 2019 10.00 AM</p>
+                                </div>
+                                <div class="punch-info">
+                                    <div class="punch-hours">
+                                        <span>3.45 hrs</span>
+                                    </div>
+                                </div>
+                                <div class="punch-btn-section">
+                                    <button type="button" class="btn btn-primary punch-btn">Punch Out</button>
+                                </div>
+                                <div class="statistics">
+                                    <div class="row">
+                                        <div class="col-md-6 col-6 text-center">
+                                            <div class="stats-box">
+                                                <p>Break</p>
+                                                <h6>1.21 hrs</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-6 text-center">
+                                            <div class="stats-box">
+                                                <p>Overtime</p>
+                                                <h6>3 hrs</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card att-statistics">
+                            <div class="card-body">
+                                <h5 class="card-title">Statistics</h5>
+                                <div class="stats-list">
+                                    <div class="stats-info">
+                                        <p>Today <strong>3.45 <small>/ 8 hrs</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>This Week <strong>28 <small>/ 40 hrs</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 31%" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>This Month <strong>90 <small>/ 160 hrs</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>Remaining <strong>90 <small>/ 160 hrs</small></strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-info">
+                                        <p>Overtime <strong>4</strong></p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card recent-activity">
+                            <div class="card-body">
+                                <h5 class="card-title">Today Activity</h5>
+                                <ul class="res-activity-list">
+                                    <li>
+                                        <p class="mb-0">Punch In at</p>
+                                        <p class="res-activity-time">
+                                            <i class="fa fa-clock-o"></i>
+                                            10.00 AM.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="mb-0">Punch Out at</p>
+                                        <p class="res-activity-time">
+                                            <i class="fa fa-clock-o"></i>
+                                            11.00 AM.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="mb-0">Punch In at</p>
+                                        <p class="res-activity-time">
+                                            <i class="fa fa-clock-o"></i>
+                                            11.15 AM.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="mb-0">Punch Out at</p>
+                                        <p class="res-activity-time">
+                                            <i class="fa fa-clock-o"></i>
+                                            1.30 PM.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="mb-0">Punch In at</p>
+                                        <p class="res-activity-time">
+                                            <i class="fa fa-clock-o"></i>
+                                            2.00 PM.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="mb-0">Punch Out at</p>
+                                        <p class="res-activity-time">
+                                            <i class="fa fa-clock-o"></i>
+                                            7.30 PM.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search Filter -->
+                <div class="row filter-row">
+                    <div class="col-sm-3">
+                        <div class="form-group form-focus select-focus">
+                            <div class="cal-icon">
+                                <input type="text" class="form-control has-feedback-left" id="single_cal3" placeholder="First Name" aria-describedby="inputSuccess2Status3">
+                            </div>
+                            <label class="focus-label">Date</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group form-focus select-focus">
+                            <select class="select floating form-control ">
+                                <option>-</option>
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>Apr</option>
+                                <option>May</option>
+                                <option>Jun</option>
+                                <option>Jul</option>
+                                <option>Aug</option>
+                                <option>Sep</option>
+                                <option>Oct</option>
+                                <option>Nov</option>
+                                <option>Dec</option>
+                            </select>
+                            <label class="focus-label">Select Month</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group form-focus select-focus">
+                            <select class="select floating form-control ">
+                                <option>-</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                            </select>
+                            <label class="focus-label">Select Year</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="btn btn-success btn-block"> Search </a>
+                    </div>
+                </div>
+                <!-- /Search Filter -->
+
+                <div class="row mb-5">
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered custom-table mb-0">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Date </th>
+                                    <th>Punch In</th>
+                                    <th>Punch Out</th>
+                                    <th>Production</th>
+                                    <th>Break</th>
+                                    <th>Overtime</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>19 Feb 2019</td>
+                                    <td>10 AM</td>
+                                    <td>7 PM</td>
+                                    <td>9 hrs</td>
+                                    <td>1 hrs</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>20 Feb 2019</td>
+                                    <td>10 AM</td>
+                                    <td>7 PM</td>
+                                    <td>9 hrs</td>
+                                    <td>1 hrs</td>
+                                    <td>0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Content -->
+        </div>
+
+    </div>
+</div>
+
+<script src="../vendors/jquery/dist/jquery.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/fastclick/lib/fastclick.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/nprogress/nprogress.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/Chart.js/dist/Chart.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/gauge.js/dist/gauge.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/iCheck/icheck.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/skycons/skycons.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/Flot/jquery.flot.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.pie.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.time.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.stack.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.resize.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/flot.curvedlines/curvedLines.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/DateJS/build/date.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/jqvmap/dist/jquery.vmap.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/moment/min/moment.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../assets/js/custom.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../assets/js/rocket-loader.min.js"
+        data-cf-settings="e0e43ee151cb47d8f664e766-|49" defer=""></script>
+<script defer src="../assets/js/beacon.min.js"
+        data-cf-beacon='{"rayId":"5d408a6dbf0eddc3","version":"2020.9.0","si":10}'></script>
+</body>
+
+<!-- Mirrored from colorlib.com/polygon/gentelella/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 05:49:22 GMT -->
+</html>

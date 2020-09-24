@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from colorlib.com/polygon/gentelella/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 05:48:53 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/images/icon.png" type="image/ico"/>
+    <title>Human Resources | Management System </title>
+
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link href="../assets/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/Employee__Profile.css">
+</head>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <!--                <div class="navbar nav_title" style="border: 0;">-->
+                <!--                    <a href="index.html" class="site_title">-->
+                <!--                        <img src="assets/images/icon.png" height="45px" alt="">-->
+                <!--                        <span>HRMS</span>-->
+                <!--                    </a>-->
+                <!--                </div>-->
+                <div class="clearfix"></div>
+
+                <div class="profile clearfix">
+                    <div class="profile_pic">
+                        <img src="../assets/images/img.jpg" alt="..." class="img-circle profile_img">
+                    </div>
+                    <div class="profile_info">
+                        <span>Welcome</span>
+                        <h2>John Doe</h2>
+                    </div>
+                </div>
+
+                <br/>
+
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>General</h3>
+                        <ul class="nav side-menu">
+                            <li>
+                                <a href="../index.html"><i class="fa fa-home"></i> Dashboard </a>
+                            </li>
+                            <li><a><i class="fa fa-edit"></i> Informations </a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../Profile.html">Profile</a></li>
+                                    <li><a href="Leaves.html">Leaves</a></li>
+                                    <li><a href="Attendance.html">Attendance</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="Settings">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Lock">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="top_nav mb-4 fixed-top">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                    <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav ">
+                    <ul class=" navbar-right">
+                        <li class="nav-item dropdown open" style="padding-left: 15px;">
+                            <a href="javascript:" class="user-profile dropdown-toggle" aria-haspopup="true"
+                               id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/images/img.jpg" alt="">John Doe
+                            </a>
+                            <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <span class="badge bg-red pull-right">50%</span>
+                                    <span>Settings</span>
+                                </a>
+                                <a class="dropdown-item" href="javascript:;">Help</a>
+                                <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log
+                                    Out</a>
+                            </div>
+                        </li>
+                        <li role="presentation" class="nav-item dropdown open">
+                            <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
+                               data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge bg-green">6</span>
+                            </a>
+                            <ul class="dropdown-menu list-unstyled msg_list" role="menu"
+                                aria-labelledby="navbarDropdown1">
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                            <span>John Smith</span>
+                                            <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                        <span>John Smith</span>
+                                            <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item">
+                                        <span class="image"><img src="assets/images/img.jpg"
+                                                                 alt="Profile Image"/></span>
+                                        <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="text-center">
+                                        <a class="dropdown-item">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="right_col" role="main">
+            <!-- Page Content -->
+            <div class="content container-fluid mt-5">
+
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h3 class="page-title">Leaves</h3>
+                        </div>
+                        <div class="col-auto float-right ml-auto">
+                            <a href="#" class="btn btn-custom" data-toggle="modal" data-target="#add_leave"><i
+                                    class="fa fa-plus"></i> Add Leave</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+
+                <!-- Leave Statistics -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Annual Leave</h6>
+                            <h4>12</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Medical Leave</h6>
+                            <h4>3</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Other Leave</h6>
+                            <h4>4</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Remaining Leave</h6>
+                            <h4>5</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Leave Statistics -->
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="dataTables_length row" id="DataTables_Table_0_length">
+                            <label class="col-md-2">Show </label>
+                                <select
+                                name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                                class="custom-select custom-select-sm col-md-3 form-control form-control-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered custom-table mb-0 datatable">
+                                <thead>
+                                <tr>
+                                    <th >Leave Type <a href="javascript:void(0);" class="text-right"> <i class="fa fa-long-arrow-down"></i> <i class="fa fa-long-arrow-up"></i></a></th>
+                                    <th>From <a href="javascript:void(0);" class="text-right"> <i class="fa fa-long-arrow-down"></i> <i class="fa fa-long-arrow-up"></i></a></th>
+                                    <th>To <a href="javascript:void(0);" class="text-right"> <i class="fa fa-long-arrow-down"></i> <i class="fa fa-long-arrow-up"></i></a></th>
+                                    <th>No of Days <a href="javascript:void(0);" class="text-right"> <i class="fa fa-long-arrow-down"></i> <i class="fa fa-long-arrow-up"></i></a></th>
+                                    <th>Reason <a href="javascript:void(0);" class="text-right"> <i class="fa fa-long-arrow-down"></i> <i class="fa fa-long-arrow-up"></i></a></th>
+                                    <th class="text-center">Status <a href="javascript:void(0);" class="text-right"> <i class="fa fa-long-arrow-down"></i> <i class="fa fa-long-arrow-up"></i></a></th>
+                                    <th>Approved by <a href="javascript:void(0);" class="text-right"> <i class="fa fa-long-arrow-down"></i> <i class="fa fa-long-arrow-up"></i></a></th>
+                                    <th width="5%" class="text-right"><i class="fa fa-cogs"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Casual Leave</td>
+                                    <td>8 Mar 2019</td>
+                                    <td>9 Mar 2019</td>
+                                    <td>2 days</td>
+                                    <td>Going to Hospital</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-purple"></i> New
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Medical Leave</td>
+                                    <td>27 Feb 2019</td>
+                                    <td>27 Feb 2019</td>
+                                    <td>1 day</td>
+                                    <td>Going to Hospital</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-success"></i> Approved
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>LOP</td>
+                                    <td>24 Feb 2019</td>
+                                    <td>25 Feb 2019</td>
+                                    <td>2 days</td>
+                                    <td>Personnal</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-success"></i> Approved
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Paternity Leave</td>
+                                    <td>13 Feb 2019</td>
+                                    <td>17 Feb 2019</td>
+                                    <td>5 days</td>
+                                    <td>Going to Hospital</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-danger"></i> Declined
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Casual Leave</td>
+                                    <td>30 Jan 2019</td>
+                                    <td>30 Jan 2019</td>
+                                    <td>Second Half</td>
+                                    <td>Going to Hospital</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-purple"></i> New
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hospitalisation</td>
+                                    <td>15 Jan 2019</td>
+                                    <td>25 Jan 2019</td>
+                                    <td>10 days</td>
+                                    <td>Going to Hospital</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-success"></i> Approved
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Casual Leave</td>
+                                    <td>13 Jan 2019</td>
+                                    <td>14 Jan 2019</td>
+                                    <td>2 days</td>
+                                    <td>Going to Hospital</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-success"></i> Approved
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Casual Leave</td>
+                                    <td>10 Jan 2019</td>
+                                    <td>10 Jan 2019</td>
+                                    <td>First Half</td>
+                                    <td>Going to Hospital</td>
+                                    <td class="text-center">
+                                        <div class="action-label">
+                                            <a class="btn btn-white btn-sm btn-rounded" href="javascript:void(0);">
+                                                <i class="fa fa-dot-circle-o text-danger"></i> Declined
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                    src="assets/img/profiles/avatar-09.jpg" alt=""></a>
+                                            <a href="#">Richard Miles</a>
+                                        </h2>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#edit_leave"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                                   data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i>
+                                                    Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row my-4">
+                    <div class="col-sm-12 col-md-5 ">
+                        <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                            Showing 1 to 8 of 8 entries
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button page-item previous disabled">
+                                    <a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0"
+                                       class="page-link">Previous</a>
+                                </li>
+                                <li class="paginate_button page-item active text-primary">
+                                    <a href="#"
+                                       aria-controls="DataTables_Table_0"
+                                       data-dt-idx="1" tabindex="0"
+                                       class="page-link">1</a></li>
+                                <li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a
+                                        href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0"
+                                        class="page-link">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Content -->
+        </div>
+
+    </div>
+</div>
+
+<script src="../vendors/jquery/dist/jquery.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/fastclick/lib/fastclick.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/nprogress/nprogress.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/Chart.js/dist/Chart.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/gauge.js/dist/gauge.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/iCheck/icheck.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/skycons/skycons.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/Flot/jquery.flot.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.pie.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.time.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.stack.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/Flot/jquery.flot.resize.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/flot.curvedlines/curvedLines.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/DateJS/build/date.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/jqvmap/dist/jquery.vmap.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../vendors/moment/min/moment.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"
+        type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+
+<script src="../assets/js/custom.min.js" type="e0e43ee151cb47d8f664e766-text/javascript"></script>
+<script src="../assets/js/rocket-loader.min.js"
+        data-cf-settings="e0e43ee151cb47d8f664e766-|49" defer=""></script>
+<script defer src="../assets/js/beacon.min.js"
+        data-cf-beacon='{"rayId":"5d408a6dbf0eddc3","version":"2020.9.0","si":10}'></script>
+</body>
+
+<!-- Mirrored from colorlib.com/polygon/gentelella/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 05:49:22 GMT -->
+</html>
